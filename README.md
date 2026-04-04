@@ -65,6 +65,9 @@ If you prefer, you can also build the modules VHDX manually as follows:
 6. Clean up:
    `rm modules.img # optionally $PWD/modules dir and the now-empty $PWD_modules_img dir too`
 
+7. Set Everyone read permission (in Windows System)
+   `icacls.exe ".\modules.vhdx" /grant:r "Everyone:(R)" /Q`
+
 # Install Instructions
 
 Please see the documentation on the [.wslconfig configuration
